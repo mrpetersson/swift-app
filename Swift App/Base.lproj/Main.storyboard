@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -29,22 +29,44 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POb-Ej-X7h"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAk-U6-t0b">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CdE-Aj-nmJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kaj-qx-yVS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="G7S-ju-T36"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JDG-bl-gop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="41X-TC-rZL"/>
                             <constraint firstItem="WK6-Ir-MY9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="9mX-JI-lh2"/>
+                            <constraint firstItem="JAk-U6-t0b" firstAttribute="top" secondItem="JDG-bl-gop" secondAttribute="bottom" constant="16.5" id="IYQ-Y0-w7S"/>
                             <constraint firstItem="JDG-bl-gop" firstAttribute="top" secondItem="WK6-Ir-MY9" secondAttribute="bottom" constant="9" id="Kz4-Vb-bIu"/>
                             <constraint firstItem="WK6-Ir-MY9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="144" id="LT0-Kv-wvH"/>
+                            <constraint firstItem="Kaj-qx-yVS" firstAttribute="top" secondItem="JAk-U6-t0b" secondAttribute="bottom" constant="20" id="Mk6-OC-OE8"/>
+                            <constraint firstItem="JAk-U6-t0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UVN-lD-PyA"/>
+                            <constraint firstItem="Kaj-qx-yVS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mah-gU-naM"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="JAk-U6-t0b" id="ewf-kX-CY1"/>
+                        <outlet property="text2" destination="Kaj-qx-yVS" id="QRi-cI-0KX"/>
                         <outlet property="theLabel" destination="WK6-Ir-MY9" id="Odj-05-vUT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="101"/>
+            <point key="canvasLocation" x="-55" y="-81"/>
         </scene>
     </scenes>
 </document>
