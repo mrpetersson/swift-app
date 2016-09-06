@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Anders Petersson on 2016-08-30.
-//  Copyright © 2016 Anders Petersson. All rights reserved.
+//  Copyright © 2016 Anders Petersson. All rights reserved..
 //
 
 import UIKit
